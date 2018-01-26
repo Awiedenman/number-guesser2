@@ -1,0 +1,69 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  background-color: #404041;
+}  
+.header__title {
+  color: #DC548A;
+  font-size: 95px;
+  padding: 23px;
+  text-align: center;
+}
+
+.header__title-span {
+  color: #E6E7E8;
+  font-weight: 300;
+}
+
+/*-------form-------------------------------------*/
+main {
+  width: 100%;
+}
+
+.main__container {
+  width: 53%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.main__input-form {
+  display: block;
+  width: 100%;
+  height: 80px;
+  border: 2px solid lightgray;
+  margin: 84px 0 71px;
+}
+
+.btn {
+  background-color: #D0D2D3;
+  color: #FFF;
+  border-radius: 50px; 
+  width: 45%;
+  height: 75px;
+}
+
+.main__submit-btn {
+  margin-right: 30px;
+}
+
+.main__clear-btn {
+  margin-left: 30px;
+}
+
+.main__input-guess-was {
+  margin-top: 99px;
+  font-size: 44px;
+}
+
+.main__display-guess {
+  color: #D83289;
+  font-size: 200px;
+}
+
+.main__input-reset {
+  width: 100%;
+}
