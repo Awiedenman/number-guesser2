@@ -54,7 +54,8 @@ main {
   margin-left: 30px;
 }
 
-.main__input-guess-was {
+.main__input-guess-was,
+.main__input-response {
   margin-top: 99px;
   font-size: 44px;
 }

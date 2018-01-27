@@ -11,25 +11,30 @@
   </header>
   <main>
     <div class="main__container">
-    <input  class="main__input-form" type="text" role="form" aria-label="number-input" placeholder="Enter your guess Here">
-    <button
-      class="btn main__submit-btn">Enter
-     </button>
-    <button 
-      class="btn main__clear-btn">Clear
-    </button>
-    <p 
-      class="main__input-guess-was">Your Last Guess Was
-    </p>
-    <p 
-      class="main__display-guess" aria-hidden="true">25
-    </p>
-    <p 
-      class="main__input-response">
-    </p>
-    <button
-      class="btn main__reset-btn" display="none"> Reset     
-    </button>
+      <form>
+        <input  class="main__input-form" type="text" role="form" aria-label="number-input" placeholder="Enter your guess Here"> 
+        <button
+          class="btn main__submit-btn">Enter
+         </button>
+        <button 
+          class="btn main__clear-btn">Clear
+        </button>
+      </form> 
+    <article class="main__guess-section">
+      <p 
+        class="main__input-guess-was">
+      </p>  
+      <p 
+        class="main__display-guess" aria-hidden="true">
+      </p>
+      <p 
+        class="main__input-response">
+      </p>
+      <button
+        class="btn main__reset-btn" display="none"> Reset     
+      </button>
+    </article>
   </main>
 </body>
+<script src="script.js"></script>
 </html>
