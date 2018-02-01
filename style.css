@@ -26,7 +26,7 @@ header {
   color: #E6E7E8;
   font-weight: 300;
 }
-/*----form-range-----------------------*/
+/*----form-range--------------------*/
 
 .min__new-range,
 .max__new-range{
@@ -170,69 +170,76 @@ h3 {
 @media screen and (max-width: 1250px) {
 
   .header__title {
-  color: #DC548A;
-  font-size: 72px;
-  padding: 23px;
-  text-align: center;
+    color: #DC548A;
+    font-size: 72px;
+    padding: 23px;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 1080px) {
 
   .header__title {
-  color: #DC548A;
-  font-size: 55px;
-  padding: 23px;
-  text-align: center;
+    color: #DC548A;
+    font-size: 55px;
+    padding: 23px;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 830px) {
 
- .main__input-form::placeholder {
-  color: #E6E7E8;
-  font-size: 30px;
-  padding: 10px;
-  margin: 0;
-}
-.btn {
-  background-color: #929497;
-  color: #FFF;
-  border-radius: 50px; 
-  width: 40%;
-  height: 75px;
-  margin: 13;
+   .main__input-form::placeholder {
+    color: #E6E7E8;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .btn {
+    background-color: #929497;
+    color: #FFF;
+    border-radius: 50px; 
+    width: 40%;
+    height: 75px;
+    margin: 13;
+  }
+
+  .main__display-guess {
+    color: #D83289;
+    font-size: 240px;
   }
 }
+
 
 @media screen and (max-width: 320px) {
 
   .header__title {
-  color: #DC548A;
-  font-size: 55px;
-  padding: 23px;
-  text-align: center;
+    color: #DC548A;
+    font-size: 55px;
+    padding: 23px;
+    text-align: center;
   }
 
   .btn {
-  background-color: #929497;
-  color: #FFF;
-  border-radius: 50px; 
-  width: 38%;
-  height: 75px;
-  margin: 10px;
+    background-color: #929497;
+    color: #FFF;
+    border-radius: 50px; 
+    width: 38%;
+    height: 75px;
+    margin: 10px;
   }
 
   .main__container {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .main__display-guess {
-  color: #D83289;
-  font-size: 195px;
-}
+    color: #D83289;
+    font-size: 195px;
+  }
 }
 
 
