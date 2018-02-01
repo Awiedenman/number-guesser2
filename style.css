@@ -2,14 +2,22 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 header {
   background-color: #404041;
 }  
+
+.title-container{
+  margin: 0 auto;
+  width: 70%;
+
+}
+
 .header__title {
   color: #DC548A;
-  font-size: 95px;
+  font-size: 92px;
   padding: 23px;
   text-align: center;
 }
@@ -18,7 +26,44 @@ header {
   color: #E6E7E8;
   font-weight: 300;
 }
+/*----form-range-----------------------*/
 
+.min__new-range,
+.max__new-range{
+  padding-top: 35px;
+  color: #404041;
+  margin: 0;
+  font-size: 30px;
+}
+
+.form__range {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #D0D2D3;
+  margin: 20px 0 15px;
+  font-size: 25px;
+  text-align: center;
+}
+.increment-instruction {
+  color: #404041;
+  font-size: 25px;
+}
+
+label {
+  display: block;
+  margin-top: 5px;
+  font-size: 40px;
+  color: #404041;
+}
+
+.max-container {
+  display: inline-block;
+  width: 48%;
+}
+.min-container {
+  display: inline-block;
+  width: 48%;
+}
 /*-------form-------------------------------------*/
 main {
   width: 100%;
@@ -28,43 +73,166 @@ main {
   width: 53%;
   margin: 0 auto;
   text-align: center;
-
 }
+
+h3 {
+  margin-top: 30px; 
+  font-size: 30px;
+  font-weight: lighter;
+  color: #404041; 
+}
+
 .main__input-form {
   display: block;
-  width: 100%;
-  height: 80px;
-  border: 2px solid lightgray;
-  margin: 84px 0 71px;
+  display: block;
+  width: 97%;
+  height: 68px;
+  border: 2px solid #D0D2D3;
+  margin: 60px auto 55px;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.main__input-form::placeholder {
+  color: #E6E7E8;
+  font-size: 45px;
+  padding: 10px;
+  margin: 0;
 }
 
 .btn {
-  background-color: #D0D2D3;
+  background-color: #929497;
   color: #FFF;
   border-radius: 50px; 
   width: 45%;
   height: 75px;
+  margin: 0;
+}
+
+.btn:disabled {
+  background-color: #D0D2D3; 
+}
+
+.btn:hover:disabled {
+  background-color: #D0D2D3; 
+}
+
+.btn:hover { 
+  background-color: #EB008B;
 }
 
 .main__submit-btn {
-  margin-right: 30px;
+  margin-right: 20px;
+  font-size: 30px;
 }
 
 .main__clear-btn {
-  margin-left: 30px;
+  margin-left: 20px;
+  font-size:  30px;
 }
 
-.main__input-guess-was,
-.main__input-response {
-  margin-top: 99px;
+.message {
+  color: #404041;
   font-size: 44px;
+}
+
+.main__your-guess-was {
+  margin-top: 70px;
+}
+
+.main__input-response {
+  margin-bottom: 95px;
 }
 
 .main__display-guess {
   color: #D83289;
-  font-size: 200px;
+  font-size: 325px;
 }
 
-.main__input-reset {
-  width: 100%;
+.main__reset-btn {
+  width: 98%;
+  height: 60px;
+  margin-bottom: 40px;
+  font-size: 30px;
 }
+
+.p__display {
+  color: #404041;
+  padding-top: 25px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.p__display span {
+  color: #DC548A;
+}
+
+@media screen and (max-width: 1250px) {
+
+  .header__title {
+  color: #DC548A;
+  font-size: 72px;
+  padding: 23px;
+  text-align: center;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+
+  .header__title {
+  color: #DC548A;
+  font-size: 55px;
+  padding: 23px;
+  text-align: center;
+  }
+}
+
+@media screen and (max-width: 830px) {
+
+ .main__input-form::placeholder {
+  color: #E6E7E8;
+  font-size: 30px;
+  padding: 10px;
+  margin: 0;
+}
+.btn {
+  background-color: #929497;
+  color: #FFF;
+  border-radius: 50px; 
+  width: 40%;
+  height: 75px;
+  margin: 13;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .header__title {
+  color: #DC548A;
+  font-size: 55px;
+  padding: 23px;
+  text-align: center;
+  }
+
+  .btn {
+  background-color: #929497;
+  color: #FFF;
+  border-radius: 50px; 
+  width: 38%;
+  height: 75px;
+  margin: 10px;
+  }
+
+  .main__container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  }
+
+  .main__display-guess {
+  color: #D83289;
+  font-size: 195px;
+}
+}
+
+
