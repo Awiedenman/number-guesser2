@@ -3,35 +3,54 @@
 <head>
   <title>Number Guesser</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1 class="header__title">Number<span class= "header__title-span"> Guesser</span></h1>
+    <div class="title-container">
+      <h1 class="header__title">Number<span class= "header__title-span"> Guesser</span></h1>
+    </div>
   </header>
-  <main>
+  <main class="main">
     <div class="main__container">
+      <form class="range-form">
+        <!-- <h3>Guess Range</h3> -->
+        <div class= "max-container">
+          <p class="min__new-range"></p>
+          <label for="min"> Min Range</label>
+          <input class="form__range form__range-minimum" id="max" type="number" aria-label="range minimum" placeholder="1" step="10" value="1">
+        </div>
+        <div class= "min-container">
+          <p class="max__new-range"></p>
+          <label for="max"> Max Range</label>
+          <input class="form__range form__range-maximum" id="min" type="number" aria-label="range maximum" placeholder="100" step="10" value="100">
+        </div>
+          <p class= "increment-instruction">Please enter your range by increments of 10.</p>
+          <p class="message form__message-range"></p>
+      </form>
       <form>
-        <input  class="main__input-form" type="text" role="form" aria-label="number-input" placeholder="Enter your guess Here"> 
+        <input  class="main__input-form" type="text" role="form" aria-label="number-input" placeholder="Enter your guess"> 
         <button
-          class="btn main__submit-btn">Enter
+          class="btn main__submit-btn">Guess
          </button>
         <button 
           class="btn main__clear-btn">Clear
         </button>
+        <p class="p__display"># of Guesses: <span class="counter">10</span> until Game Over!</p>
       </form> 
     <article class="main__guess-section">
       <p 
-        class="main__input-guess-was">
+        class="message main__your-guess-was">
       </p>  
       <p 
         class="main__display-guess" aria-hidden="true">
       </p>
       <p 
-        class="main__input-response">
+        class="message main__input-response">
       </p>
       <button
-        class="btn main__reset-btn" display="none"> Reset     
+        class="btn main__reset-btn" hidden> Reset     
       </button>
     </article>
   </main>
